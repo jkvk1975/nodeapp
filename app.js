@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
     res.send("Aplikacja Server App.js");
